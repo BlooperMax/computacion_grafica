@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Editar barra de Scroll (scrollBar) */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #201F23;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8E2DE2;
+    border-radius: 4px;
+}
+
+li{
+    text-decoration: none;
+}
+
+.layout_main-page{
+    position: relative;
+}
+
+.sticky_nav{
+    background: #201F23 ;
+    width: 100%;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar_container{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+}
+
+.value{
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.progress{
+    width: 100%;
+    height: 15px;
+    border-radius: 8px;
+    bottom: -10px;
+    background-color:#fff ;
+    overflow: hidden;
+}
+.progress_bar{
+    width: 0%;
+    height: 100%;
+    background-color: #8E2DE2;
+}
+
+.home{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.navbar{
+    justify-self: right;
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    list-style: none;
+}
+
+.link{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+}
+
+.link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-bottom: 2px solid #8E2DE2 ;
+    top: 20px;
+    left: 0;
+    z-index: 3;
+    transition: all ease-in-out 300ms;
+}
+
+.link:hover::after{
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+#particles{
+    background-color: #201F23;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    color: #8E2DE2;
+    font-size: 52px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    animation: title-animation 5s infinite ease-in-out;
+}
+
+.main_content{
+    border-top: 5px #8E2DE2 dashed;
+    display: flex;
+    row-gap: 48px;
+    flex-direction: column;
+    background-color: #201F23;
+    padding: 5%;
+}
+
+.section_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_info{
+    color: #8E2DE2;
+    font-size: 1.6em;
+    margin-bottom: 8px;
+}
+
+.p_info{
+    text-indent: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 16px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.img_info{
+    border-top: 10px #8E2DE2 double;
+    border-bottom: 10px #8E2DE2 double;
+    border-radius: 24px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    border-top: 5px #8E2DE2 dashed;
+    background-color: #201F23;
+    width: 100%;
+    padding: 36px 20%;
+}
+
+.footer_title{
+    color: #8E2DE2;
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form_container{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.student_data, .student_data b{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+.button{
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 18px;
+    color: #201F23;
+    background-color: #FFBF3A;
+    border: #FFBF3A 2px solid;
+}
+
+/* estilos de la tabla */
+
+.table{
+    border-top: 2px #8E2DE2 solid;
+    border-bottom: 2px #8E2DE2 solid;
+    padding: 16px 0;
+}
+
+.table_text{
+    color: #fff;
+    padding: 0 8px;
+}
+
+.border_right{
+    border-right: 1px groove #8E2DE2 ;
+}
+
+.t_description{
+    text-indent: 40px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.t_img{
+    width: 250px ;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+
+/* Estilos del calendario */
+
+.calendar_month{
+    text-align: center;
+    font-size: 38px;
+    color: #8E2DE2;
+    margin-bottom: 16px;
+}
+
+.calendar_numbers{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 32px;
+}
+
+.calendar_number,.days{
+    color: #fff;
+    text-align: center;
+}
+
+.days{
+    font-weight: 600;
+}
+
+.first_day{
+    grid-column-start: 5;
+}
+
+.actual_date{
+    background-color: #8E2DE2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    justify-self: center;
+    font-weight: 500;
+
+}
+
+@keyframes title-animation {
+    0%   {
+        transform:  translateY(-50%) translateX(-50%) scale(1);
+    }
+    50%  {
+        transform:  translateY(-50%) translateX(-50%) scale(1.15);
+        
+    }
+    100% {
+        transform:  translateY(-50%) translateX(-50%) scale(1);
+    }
+  }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Cargando estilos -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!-- Descarga de fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <title>Computacion Grafica</title>
+
+    </head>
+    <body class="layout_main-page">
+        <div class="sticky_nav">
+            <nav class="navbar_container">
+                <code class="value" id="progress_value">0%</code>
+                <div class="progress">
+                    <div id="progress_bar" class="progress_bar"></div>
+                </div>
+                <ul class="navbar">
+                    <li><a class="link" href="./index.html">Principal</a></li>
+                    <li><a class="link" href="./tabla.html">Tabla</a></li>
+                    <li><a class="link" href="./calendario.html">Calendario</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        
+        <div  id="home"  class="header">
+            <div id="particles"></div>
+            <h1 class="title">Computacion Grafica</h1>
+        </div>
+
+
+        <main class="main_content">
+
+            <table class="table">
+                <tr>
+                    <th class="table_text border_right">
+                        Tecnica 3D
+                    </th>
+                    <th class="table_text border_right">
+                        Descripcion
+                    </th>
+                    <th class="table_text">
+                        Imagen
+                    </th>
+                </tr>
+
+                <tr>
+                    <td class="table_text border_right">
+                        Shading (Sombreado) 
+                    </td>
+
+                    <td class="table_text t_description border_right">
+                        implica la simulación de computadora (o más exactamente; el cálculo) como las caras de un polígono se comportarán cuando es iluminado por una fuente de la luz virtual. El cálculo exacto varía según no sólo que datos están disponibles sobre la cara sombreada, sino también la técnica de sombreado.
+                    </td>
+                    <td class=" table_text">
+                        <img class="t_img" src="images/red.gif">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table_text border_right">
+                        Rastering (Rasterizacion) 
+                    </td>
+
+                    <td class="table_text t_description border_right">
+                        es una estructura o fichero de datos que representa una rejilla rectangular de píxeles o puntos de color, denominada matriz, que se puede visualizar en un monitor, papel u otro dispositivo de representación.
+                    </td>
+                    <td class=" table_text">
+                        <img class="t_img" src="images/1_lKzU6yp8tExrS0nrf6tg8g.png">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table_text border_right">
+                        Texturing (Texturizado)
+                    </td>
+
+                    <td class="table_text t_description border_right">
+                        Las superficies polígonales (secuencia de caras) pueden contener datos correspondiente de más de un color, pero en el software más avanzado, pueden ser una lona virtual para una imagen, u otra imagen rasterizada. Tal imagen es colocada en una cara, o la serie de caras y es llamada Textura.
+                    </td>
+                    <td class=" table_text">
+                        <img class="t_img" src="images/texture_mapping.gif">
+
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </main>
+
+        <footer id="contacto" class="contact">
+            <h3 class="footer_title">Datos del estudiante</h3>
+
+            <span class="student_data"> <b>Nombres:</b> Edgardo Andres </span>
+            <span class="student_data"> <b>Apellidos:</b> Caña Carrasquel </span>
+            <span class="student_data"> <b>Cedula:</b> 27.748.377 </span>
+
+        </footer>
+
+        <!-- Libreria de particulas -->
+        <script src="./particles.min.js"></script>
+
+        <!-- Script de javascript -->
+        <script src="./index.js"></script>
+    </body>
+</html>

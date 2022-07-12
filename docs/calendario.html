@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Cargando estilos -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!-- Descarga de fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <title>Computacion Grafica</title>
+
+    </head>
+    <body class="layout_main-page">
+        <div class="sticky_nav">
+            <nav class="navbar_container">
+                <code class="value" id="progress_value">0%</code>
+                <div class="progress">
+                    <div id="progress_bar" class="progress_bar"></div>
+                </div>
+                <ul class="navbar">
+                    <li><a class="link" href="./index.html">Principal</a></li>
+                    <li><a class="link" href="./tabla.html">Tabla</a></li>
+                    <li><a class="link" href="./calendario.html">Calendario</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        
+        <div  id="home"  class="header">
+            <div id="particles"></div>
+            <h1 class="title">Computacion Grafica</h1>
+        </div>
+
+
+        <main class="main_content">
+
+            <div class="table">
+                <h4 class="calendar_month">
+                    Julio 2022
+                </h4>
+                <ol class="calendar_numbers">
+                    <!-- dias de la semana -->
+                    <li class="days">Lun</li>
+                    <li class="days">Mar</li>
+                    <li class="days">Mie</li>
+                    <li class="days">Jue</li>
+                    <li class="days">Vie</li>
+                    <li class="days">Sab</li>
+                    <li class="days">Dom</li>
+
+                    <!-- Fecha de los dias -->
+                    <li class="calendar_number first_day">1</li>
+                    <li class="calendar_number">2</li>
+                    <li class="calendar_number">3</li>
+                    <li class="calendar_number">4</li>
+                    <li class="calendar_number">5</li>
+                    <li class="calendar_number">6</li>
+                    <li class="calendar_number">7</li>
+                    <li class="calendar_number">8</li>
+                    <li class="calendar_number">9</li>
+                    <li class="calendar_number">10</li>
+                    <li class="calendar_number">11</li>
+                    <li class="calendar_number actual_date">12</li>
+                    <li class="calendar_number">13</li>
+                    <li class="calendar_number">14</li>
+                    <li class="calendar_number">15</li>
+                    <li class="calendar_number">16</li>
+                    <li class="calendar_number">17</li>
+                    <li class="calendar_number">18</li>
+                    <li class="calendar_number">19</li>
+                    <li class="calendar_number">20</li>
+                    <li class="calendar_number">21</li>
+                    <li class="calendar_number">22</li>
+                    <li class="calendar_number">23</li>
+                    <li class="calendar_number">24</li>
+                    <li class="calendar_number">25</li>
+                    <li class="calendar_number">26</li>
+                    <li class="calendar_number">27</li>
+                    <li class="calendar_number">28</li>
+                    <li class="calendar_number">29</li>
+                    <li class="calendar_number">30</li>
+                    <li class="calendar_number">31</li>
+                </ol>
+            </div>
+
+        </main>
+
+        <footer id="contacto" class="contact">
+            <h3 class="footer_title">Datos del estudiante</h3>
+
+            <span class="student_data"> <b>Nombres:</b> Edgardo Andres </span>
+            <span class="student_data"> <b>Apellidos:</b> Caña Carrasquel </span>
+            <span class="student_data"> <b>Cedula:</b> 27.748.377 </span>
+
+        </footer>
+
+        <!-- Libreria de particulas -->
+        <script src="./particles.min.js"></script>
+
+        <!-- Script de javascript -->
+        <script src="./index.js"></script>
+    </body>
+</html>
