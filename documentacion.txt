@@ -1,0 +1,18 @@
+DOCUMENTACION
+=====================================
+
+La aplicación consta de 3 páginas, las cuales son: contenido principal, página de tabla y el calendario, en
+la parte superior se encuentra una barra de navegación que se adhiere a la pantalla del usuario, además de contar 
+con una barra de progreso que aumentará o disminuirá en función del sitio que este visualizando el usuario.
+    En el leader se encuentra la temática de la página que es "computación gráfica", el cual esta animado de tal 
+manera que tenga un movimiento creciente y decreciente, además tiene de fondo unas partículas, puestas por
+una librería de JavaScript llamada "ParticlesJs", el cual se encuentra en el archivo "particles.min.js",
+en el archivo JavaScript "index.js" se encuentra la configuración de la librería para que se viera de tal forma.
+además de tener la función que calcula el porcentaje de la barra de progreso.
+
+en Index.html se encuentra el contenido general de la página, con sus títulos, descripciones e imágenes, en tabla.html
+esta una tabla relacionada con el contenido ya visto en la primera página, y la de calendario esta un calendario precisamente,
+indicando la fecha de entrega de esta evaluación.
+
+
+El footer de la paginas son los datos de estudiante, la persona que hizo la página.
